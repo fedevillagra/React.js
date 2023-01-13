@@ -61,58 +61,39 @@ const NavBar = ({children}) => {
                     </button>
                   </div>
   
-                  {/* Links */}
-                  <Tab.Group as="div" className="mt-2 relative z-100 ">
-                    <div className="border-b border-gray-200">
-                      <Tab.List className="-mb-px flex space-x-8 px-4 bg-white">
-                        {navigation.categories.map((category) => (
-                          <Tab
-                            key={category.name}
-                            className={({ selected }) =>
-                              classNames(
-                                selected ? 'text-blue-400 border-blue-400' : 'text-gray-900 border-transparent',
-                                'flex-1 whitespace-nowrap border-b-2 py-4 px-1 text-base font-medium'
-                              )
-                            }
-                          >
-                            {category.name}
-                          </Tab>
-                        ))}
-                      </Tab.List>
-                    </div>
-                  </Tab.Group>
+
   
                   <div className="space-y-6 border-t border-gray-200 py-6 px-4">
                     {navigation.categories.map((category) => (
                       <div key={category.name} className="flow-root">
-                        <a href={category.href} className="-m-2 block p-2 font-medium text-gray-900">
+                        <Link to={`/category/${category.name}`} className="-m-2 block p-2 font-medium text-gray-900">
                           {category.name}
-                        </a>
+                        </Link>
                       </div>
                     ))}
                   </div>
   
                   <div className="space-y-6 border-t border-gray-200 py-6 px-4">
                     <div className="flow-root">
-                      <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
+                    <Link to={'/signin'} className="-m-2 block p-2 font-medium text-gray-900">
                         Sign in
-                      </a>
+                      </Link>
                     </div>
                     <div className="flow-root">
-                      <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
+                      <Link to={'/registration'} className="-m-2 block p-2 font-medium text-gray-900">
                         Create account
-                      </a>
+                      </Link>
                     </div>
                   </div>
   
                   <div className="border-t border-gray-200 py-6 px-4">
                     <a href="#" className="-m-2 flex items-center p-2">
                       <img
-                        src="https://tailwindui.com/img/flags/flag-canada.svg"
+                        src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
                         alt=""
                         className="block h-auto w-5 flex-shrink-0"
                       />
-                      <span className="ml-3 block text-base font-medium text-gray-900">CAD</span>
+                      <span className="ml-3 block text-base font-medium text-gray-900">USD</span>
                       <span className="sr-only">, change currency</span>
                     </a>
                   </div>
