@@ -12,13 +12,13 @@ import { addDoc, collection, getFirestore } from 'firebase/firestore';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyD_Q2F5sCysiSNam4kkhpH7hGGrP2oEYsE",
-  authDomain: "vife-ecommerce.firebaseapp.com",
-  projectId: "vife-ecommerce",
-  storageBucket: "vife-ecommerce.appspot.com",
-  messagingSenderId: "349227008209",
-  appId: "1:349227008209:web:e543ec5b1133389f6d85f0",
-  measurementId: "G-JXX8LD81NB"
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId,
+  measurementId: process.env.REACT_APP_measurementId
 };
 
 // Initialize Firebase
