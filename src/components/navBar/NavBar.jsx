@@ -66,7 +66,7 @@ const NavBar = ({children}) => {
                   <div className="space-y-6 border-t border-gray-200 py-6 px-4">
                     {navigation.categories.map((category) => (
                       <div key={category.name} className="flow-root">
-                        <Link to={`/category/${category.name}`} className="-m-2 block p-2 font-medium text-gray-900">
+                        <Link to={`/category/${category.name}`} onClick={() => setOpen(false)} className="-m-2 block p-2 font-medium text-gray-900">
                           {category.name}
                         </Link>
                       </div>
@@ -75,12 +75,12 @@ const NavBar = ({children}) => {
   
                   <div className="space-y-6 border-t border-gray-200 py-6 px-4">
                     <div className="flow-root">
-                    <Link to={'/signin'} className="-m-2 block p-2 font-medium text-gray-900">
+                    <Link to={'/signin'} onClick={() => setOpen(false)} className="-m-2 block p-2 font-medium text-gray-900">
                         Sign in
                       </Link>
                     </div>
                     <div className="flow-root">
-                      <Link to={'/registration'} className="-m-2 block p-2 font-medium text-gray-900">
+                      <Link to={'/registration'} onClick={() => setOpen(false)} className="-m-2 block p-2 font-medium text-gray-900">
                         Create account
                       </Link>
                     </div>
