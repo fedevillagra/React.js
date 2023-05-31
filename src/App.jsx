@@ -10,6 +10,7 @@ import CartView, { ThemeProvider } from './components/cart/CartView';
 import Checkout from './components/cart/Checkout';
 import Signin from './components/navBar/Signin';
 import Registration from './components/navBar/Registration';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Footer/>
         </BrowserRouter>
       </ThemeProvider>
+      <Analytics/>
     </CartContextProvider>
   );
 }
