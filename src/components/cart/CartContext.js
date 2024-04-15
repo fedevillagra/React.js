@@ -46,8 +46,9 @@ export const CartContextProvider = ({children}) => {
      }
 
      const delateProductById = (id) => {
-        const newCart = cart.filter(item=>item.id != id)
-        setCart(newCart)
+        const newCart = cart.filter(item=>item.id != id);
+        setCart(newCart);
+        (newCart.length === 0) && (window.location.href = "/");
      }
 
   return (

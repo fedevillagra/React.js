@@ -75,6 +75,7 @@ export default function Registration() {
                   id="first-name"
                   autoComplete="given-name"
                   className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  required
                 />
               </div>
             </div>
@@ -89,6 +90,7 @@ export default function Registration() {
                   id="last-name"
                   autoComplete="family-name"
                   className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  required
                 />
               </div>
             </div>
@@ -103,6 +105,7 @@ export default function Registration() {
                   type="email"
                   autoComplete="email"
                   className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  required
                 />
               </div>
             </div>
@@ -117,6 +120,7 @@ export default function Registration() {
                   id="company"
                   autoComplete="organization"
                   className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  required
                 />
               </div>
             </div>
@@ -134,9 +138,8 @@ export default function Registration() {
                     name="country"
                     className="h-full rounded-md border-transparent bg-transparent py-0 pl-4 pr-8 text-gray-500 focus:border-indigo-500 focus:ring-indigo-500"
                   >
-                    <option>US</option>
-                    <option>CA</option>
-                    <option>EU</option>
+                    <option value="AR">Argentina</option> <option value="AU">Australia</option> <option value="AT">Austria</option> <option value="BE">Belgium</option> <option value="BR">Brazil</option> <option value="CA">Canada</option> <option value="CL">Chile</option> <option value="CN">China</option> <option value="CO">Colombia</option> <option value="CR">Costa Rica</option> <option value="HR">Croatia</option> <option value="CZ">Czech Republic</option> <option value="DK">Denmark</option> <option value="EG">Egypt</option> <option value="FI">Finland</option> <option value="FR">France</option> <option value="DE">Germany</option> <option value="GR">Greece</option> <option value="HU">Hungary</option> <option value="IN">India</option> <option value="ID">Indonesia</option> <option value="IR">Iran</option> <option value="IE">Ireland</option> <option value="IL">Israel</option> <option value="IT">Italy</option> <option value="JP">Japan</option> <option value="KR">South Korea</option> <option value="MY">Malaysia</option> <option value="MX">Mexico</option> <option value="MA">Morocco</option> <option value="NL">Netherlands</option> <option value="NZ">New Zealand</option> <option value="NO">Norway</option> <option value="PE">Peru</option> <option value="PH">Philippines</option> <option value="PL">Poland</option> <option value="PT">Portugal</option> <option value="RO">Romania</option> <option value="RU">Russia</option> <option value="SA">Saudi Arabia</option> <option value="RS">Serbia</option> <option value="SG">Singapore</option> <option value="ZA">South Africa</option> <option value="ES">Spain</option> <option value="SE">Sweden</option> <option value="CH">Switzerland</option> <option value="TH">Thailand</option> <option value="TR">Turkey</option> <option value="UA">Ukraine</option> <option value="AE">United Arab Emirates</option> <option value="GB">United Kingdom</option> <option value="US">United States</option>
+
                   </select>
                 </div>
                 <input
@@ -144,8 +147,9 @@ export default function Registration() {
                   name="phone-number"
                   id="phone-number"
                   autoComplete="tel"
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 pl-20 focus:border-indigo-500 focus:ring-indigo-500"
+                  className="block w-full rounded-md border-gray-300 py-3 px-4 pl-52 focus:border-indigo-500 focus:ring-indigo-500"
                   placeholder="+1 (555) 987-6543"
+                  required
                 />
               </div>
             </div>

@@ -1,4 +1,7 @@
 const Footer = () => {
+  let fechaActual = new Date();
+  let anioActual = fechaActual.getFullYear();
+
     return (
       
       <footer aria-label="Site Footer" className="bg-white">
@@ -110,8 +113,7 @@ const Footer = () => {
           </div>
           <div className="mt-16 border-t border-gray-100 pt-8">
             <p className="text-center text-xs leading-relaxed text-gray-500">
-
-              © Vife Company 2023. All rights reserved.
+            Copyright &copy; {anioActual} Federico Villagra. All rights reserved.
             </p>
           </div>
         </div>

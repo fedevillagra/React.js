@@ -1,5 +1,5 @@
 {
-  "homepage": "https://fedevillagra.github.io/",
+  "homepage": "https://proyecto-final-federico-villagra.vercel.app/",
   "name": "react_fede",
   "version": "0.1.0",
   "private": true,
@@ -14,8 +14,8 @@
     "firebase": "^9.15.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.5",
-    "react-scripts": "5.0.1",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
